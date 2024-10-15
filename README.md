@@ -35,5 +35,6 @@
 
 *Набор характеристик товара, их обязательность и соответствующие фильтры могут быть изменены в ходе разработки проекта.*
 # Проектная база
-![image](https://github.com/user-attachments/assets/21046190-2cb5-4295-8119-7da4f14abd5a)
+![image](https://github.com/user-attachments/assets/3ea8389a-7922-412b-a936-78bd4a48543c)
+
 
