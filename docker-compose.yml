@@ -1,0 +1,6 @@
+﻿services:
+  beautyshop:
+    image: beautyshop
+    build:
+      context: .
+      dockerfile: BeautyShop/Dockerfile
