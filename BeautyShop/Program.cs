@@ -11,3 +11,5 @@ SerilogConfigurator.ConfigureApplication(app);
 SwaggerConfigurator.ConfigureApplication(app);
 
 app.UseHttpsRedirection();
+
+app.Run();
