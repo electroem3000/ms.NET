@@ -1,4 +1,4 @@
-@BeautyShop_HostAddress = http://localhost:5001
+@BeautyShop_HostAddress = http://localhost:5014
 
 GET {{BeautyShop_HostAddress}}/weatherforecast/
 Accept: application/json

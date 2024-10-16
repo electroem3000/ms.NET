@@ -1,6 +1,6 @@
 using Serilog;
 
-namespace AirTicketServiceWeb.Service.IoC;
+namespace BeautyShop.Service.IoC;
 
 public static class SerilogConfigurator
 {
