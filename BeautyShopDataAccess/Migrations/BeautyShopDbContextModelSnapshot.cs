@@ -54,6 +54,9 @@ namespace BeautyShopDataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ExternalId")
+                        .IsUnique();
+
                     b.HasIndex("UserId");
 
                     b.ToTable("CardEntity");
@@ -87,6 +90,9 @@ namespace BeautyShopDataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ExternalId")
+                        .IsUnique();
+
                     b.HasIndex("UserId");
 
                     b.ToTable("OrderEntity");
@@ -116,6 +122,9 @@ namespace BeautyShopDataAccess.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ExternalId")
+                        .IsUnique();
 
                     b.HasIndex("OrderId");
 
@@ -160,6 +169,9 @@ namespace BeautyShopDataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ExternalId")
+                        .IsUnique();
+
                     b.ToTable("ProductEntity");
                 });
 
@@ -197,6 +209,9 @@ namespace BeautyShopDataAccess.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ExternalId")
+                        .IsUnique();
 
                     b.ToTable("User");
                 });

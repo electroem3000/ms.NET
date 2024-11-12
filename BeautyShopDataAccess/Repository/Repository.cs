@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using BeautyShopDataAccess;
 using BeautyShopDataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,9 +7,9 @@ namespace DataAccess.Repository;
 
 public class Repository<T> : IRepository<T> where T : BaseEntity
 {
-    private readonly IDbContextFactory<DbContext> _contextFactory;
+    private readonly IDbContextFactory<BeautyShopDbContext> _contextFactory;
 
-    public Repository(IDbContextFactory<DbContext> contextFactory)
+    public Repository(IDbContextFactory<BeautyShopDbContext> contextFactory)
     {
         _contextFactory = contextFactory;
     }

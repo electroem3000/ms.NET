@@ -18,10 +18,15 @@ public class BeautyShopDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<UserEntity>().HasKey(x => x.Id);
+        modelBuilder.Entity<UserEntity>().HasIndex(x => x.ExternalId).IsUnique();
         modelBuilder.Entity<ProductEntity>().HasKey(x => x.Id);
+        modelBuilder.Entity<ProductEntity>().HasIndex(x => x.ExternalId).IsUnique();
         modelBuilder.Entity<OrderEntity>().HasKey(x => x.Id);
+        modelBuilder.Entity<OrderEntity>().HasIndex(x => x.ExternalId).IsUnique();
         modelBuilder.Entity<CardEntity>().HasKey(x => x.Id);
+        modelBuilder.Entity<CardEntity>().HasIndex(x => x.ExternalId).IsUnique();
         modelBuilder.Entity<OrderProductEntity>().HasKey(x => x.Id);
+        modelBuilder.Entity<OrderProductEntity>().HasIndex(x => x.ExternalId).IsUnique();
 
         modelBuilder.Entity<OrderEntity>().HasOne(x => x.User)
             .WithMany(x => x.Orders).HasForeignKey(x => x.UserId);
