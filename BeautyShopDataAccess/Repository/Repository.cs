@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Repository;
 
-public class Repository<T> : IRepository<T> where T : BaseEntity
+public class Repository<T> : IRepository<T> where T : class, IBaseEntity
 {
     private readonly IDbContextFactory<BeautyShopDbContext> _contextFactory;
 
